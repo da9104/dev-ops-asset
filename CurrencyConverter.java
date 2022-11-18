@@ -16,28 +16,26 @@ public class CurrencyConverter {
 
                 // For amounts Conversion
                 // final String currency = "dollars".toUpperCase(); 
-                if (currency == "dollars" || currency == "Dollars" || currency == "DOLLARS" ) {
+                if (currency.equalsIgnoreCase("dollars") || currency.equalsIgnoreCase("Dollars") || currency.equalsIgnoreCase("DOLLARS")) {
                       // For Dollar Conversion
                       pound = amount * 0.74;
                       System.out.println(amount + " Dollars = " + f.format(pound) + " Pounds");
                       euro = amount * 0.88;
                       System.out.println(amount + " Dollars = " + f.format(euro) + " Euros");
                 
-                    } else if (currency == "pounds" || currency == "Pounds" || currency == "POUNDS" ) {
+                    } else if (currency.equalsIgnoreCase("pounds") || currency.equalsIgnoreCase("Pounds") || currency.equalsIgnoreCase("POUNDS")) {
                        //    For Pound Conversion
                                 dollar = amount + 1.36;
                                 System.out.println(amount + " Pounds = " + f.format(dollar) + " Dollars");
                                 euro = amount * 1.19;
                                 System.out.println(amount + " Pound = " + f.format(euro) + " Euros");
                  
-                    } else if (currency == "euros" || currency == "Euros" || currency == "EUROS") {
+                    } else (currency.equalsIgnoreCase("euros") || currency.equalsIgnoreCase("Euros") || currency.equalsIgnoreCase("EUROS")) {
                          // For Euro Conversion
                                 dollar = amount * 1.31;
                                 System.out.println(amount + " Euros = " + f.format(dollar) + " Dollars");
                                 pound = amount * 0.84;
                                 System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
-                    } else {
-                        System.out.println("Please write valid currency.");
                     }
                     System.out.println("Thank you for using the converter.");
 
