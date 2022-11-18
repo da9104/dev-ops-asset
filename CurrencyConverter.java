@@ -1,6 +1,5 @@
 import java.util.*;
 import java.text.DecimalFormat;
-import java.util.Scanner;
 
 public class CurrencyConverter {
 
@@ -12,58 +11,58 @@ public class CurrencyConverter {
                 DecimalFormat f = new DecimalFormat("##.##");
 
                 amount = Integer.parseInt(args[0]);
-                String currency = args[1].nextLine().trim().toUpperCase();
+                String currency = args[1].trim().toUpperCase();
 
-                // // For amounts Conversion
-                // // final String currency = "dollars".toUpperCase(); 
-                // if (currency.equalsIgnoreCase("dollar") || currency.equalsIgnoreCase("Dollar")) {
-                //       // For Dollar Conversion
-                //       pound = amount * 0.74;
-                //       System.out.println(amount + " Dollars = " + f.format(pound) + " Pounds");
-                //       euro = amount * 0.88;
-                //       System.out.println(amount + " Dollars = " + f.format(euro) + " Euros");
+                // For amounts Conversion
+                // final String currency = "dollars".toUpperCase(); 
+                if (currency == "dollar" || currency == "Dollar") {
+                      // For Dollar Conversion
+                      pound = amount * 0.74;
+                      System.out.println(amount + " Dollars = " + f.format(pound) + " Pounds");
+                      euro = amount * 0.88;
+                      System.out.println(amount + " Dollars = " + f.format(euro) + " Euros");
                 
-                //     } else if (currency.equalsIgnoreCase("pounds") || currency.equalsIgnoreCase("Pounds") || currency.equalsIgnoreCase("POUNDS")) {
-                //        //    For Pound Conversion
-                //                 dollar = amount + 1.36;
-                //                 System.out.println(amount + " Pounds = " + f.format(dollar) + " Dollars");
-                //                 euro = amount * 1.19;
-                //                 System.out.println(amount + " Pound = " + f.format(euro) + " Euros");
-                 
-                //     } else (currency.equalsIgnoreCase("euros") || currency.equalsIgnoreCase("Euros") || currency.equalsIgnoreCase("EUROS")) {
-                //          // For Euro Conversion
-                //                 dollar = amount * 1.31;
-                //                 System.out.println(amount + " Euros = " + f.format(dollar) + " Dollars");
-                //                 pound = amount * 0.84;
-                //                 System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
-                //     }
-                //     System.out.println("Thank you for using the converter.");
-
-                switch (currency){
-                        case "dollars" :
-                                // For Dollar Conversion
-                                pound = amount * 0.74;
-                                System.out.println(amount + " Dollars = " + f.format(pound) + " Pounds");
-                                euro = amount * 0.88;
-                                System.out.println(amount + " Dollars = " + f.format(euro) + " Euros");
-                                break;
-                        case "pounds":
-                                // For Pound Conversion
+                    } else if (currency == "pounds" || currency == "Pounds") {
+                       //    For Pound Conversion
                                 dollar = amount + 1.36;
                                 System.out.println(amount + " Pounds = " + f.format(dollar) + " Dollars");
                                 euro = amount * 1.19;
                                 System.out.println(amount + " Pound = " + f.format(euro) + " Euros");
-                                break;
-                        case "euros":
-                                // For Euro Conversion
+                 
+                    } else (currency == "euros" || currency == "Euros") {
+                         // For Euro Conversion
                                 dollar = amount * 1.31;
                                 System.out.println(amount + " Euros = " + f.format(dollar) + " Dollars");
                                 pound = amount * 0.84;
                                 System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
-                                break;
-                }
-                System.out.println("Thank you for using the converter.");
-        }
+                    }
+                    System.out.println("Thank you for using the converter.");
+
+        //         switch (currency){
+        //                 case "dollars" :
+        //                         // For Dollar Conversion
+        //                         pound = amount * 0.74;
+        //                         System.out.println(amount + " Dollars = " + f.format(pound) + " Pounds");
+        //                         euro = amount * 0.88;
+        //                         System.out.println(amount + " Dollars = " + f.format(euro) + " Euros");
+        //                         break;
+        //                 case "pounds":
+        //                         // For Pound Conversion
+        //                         dollar = amount + 1.36;
+        //                         System.out.println(amount + " Pounds = " + f.format(dollar) + " Dollars");
+        //                         euro = amount * 1.19;
+        //                         System.out.println(amount + " Pound = " + f.format(euro) + " Euros");
+        //                         break;
+        //                 case "euros":
+        //                         // For Euro Conversion
+        //                         dollar = amount * 1.31;
+        //                         System.out.println(amount + " Euros = " + f.format(dollar) + " Dollars");
+        //                         pound = amount * 0.84;
+        //                         System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
+        //                         break;
+        //         }
+        //         System.out.println("Thank you for using the converter.");
+         }
 
 }
 
