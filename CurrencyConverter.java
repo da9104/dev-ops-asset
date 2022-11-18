@@ -29,12 +29,15 @@ public class CurrencyConverter {
                                 euro = amount * 1.19;
                                 System.out.println(amount + " Pound = " + f.format(euro) + " Euros");
                  
-                    } else (currency == "euros" || currency == "Euros") {
+                    } else if (currency == "euros" || currency == "Euros") {
                          // For Euro Conversion
                                 dollar = amount * 1.31;
                                 System.out.println(amount + " Euros = " + f.format(dollar) + " Dollars");
                                 pound = amount * 0.84;
                                 System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
+                    }
+                    else {
+                        System.out.println("Please write valid number.");
                     }
                     System.out.println("Thank you for using the converter.");
                 }
