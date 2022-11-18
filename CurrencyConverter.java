@@ -40,7 +40,6 @@ public class CurrencyConverter {
                         System.out.println("Please write valid number.");
                     }
                     System.out.println("Thank you for using the converter.");
-                }
         //         switch (currency){
         //                 case "dollars" :
         //                         // For Dollar Conversion
