@@ -4,7 +4,8 @@ import java.text.DecimalFormat;
 public class CurrencyConverter {
 
         public static void main(String[] args) {
-
+                System.out.println("Hello user! Do you want to convert the currency?");
+                System.out.println("1) + \n2) - \n3) * \n4) /");
                 double amount, dollar, pound, code, euro;
 
                 DecimalFormat f = new DecimalFormat("##.##");
