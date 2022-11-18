@@ -5,7 +5,7 @@ public class CurrencyConverter {
 
         public static void main(String[] args) {
                 System.out.println("Hello user! Do you want to convert the currency?");
-                System.out.println("1) + \n2) - \n3) * \n4) /");
+                System.out.println("1) Dollars  \n2) Pounds \n3) Euros \n enter number with currency.");
                 double amount, dollar, pound, code, euro;
 
                 DecimalFormat f = new DecimalFormat("##.##");
