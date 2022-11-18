@@ -11,7 +11,7 @@ public class CurrencyConverter {
                 DecimalFormat f = new DecimalFormat("##.##");
 
                 amount = Integer.parseInt(args[0]);
-                String currency = args[1].trim().toUpperCase();
+                String currency = args[1];
 
                 // For amounts Conversion
                 // final String currency = "dollars".toUpperCase(); 
